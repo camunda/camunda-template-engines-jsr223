@@ -32,7 +32,7 @@ import org.camunda.commons.utils.StringUtil;
 public class VelocityScriptEngineFactory implements ScriptEngineFactory {
 
   public final static String NAME = "velocity";
-  public final static String VERSION = "1.7";
+  public final static String VERSION = "2.1";
 
   public final static List<String> names;
   public final static List<String> extensions;
