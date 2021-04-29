@@ -1,0 +1,11 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    timezone: Europe/Berlin
+  ignore:
+  - dependency-name: net.sf.saxon:Saxon-HE
+    versions:
+    - "10.3"
