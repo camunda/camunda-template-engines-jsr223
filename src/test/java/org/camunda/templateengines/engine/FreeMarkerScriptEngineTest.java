@@ -126,6 +126,12 @@ public class FreeMarkerScriptEngineTest {
   }
   
   @Test
+  public void testDefineBlockExt() throws ScriptException {
+    bindings.put("who", "world");
+    expected = "<p>Hello world!</p>";
+    template = "<#import \"simple_macro.ftl\" as myMacro><@myMacro.p >Hello world!</@myMacro.p>";
+  }
+  @Test
   public void testFailingEvaluation() {
     try {
       String invalidTemplate = "${}";

@@ -13,6 +13,28 @@ Wrapper of Java Freemarker 2.3 template engine as
 
 You can use the template engine in Camunda Automation Platform 7 as scripting language.
 
+## Using Freemarker templates
+
+You can define templates and macros in order to reuse them by putting the `.ftl` files into a `templates` folder, in the Camunda classpath root (for example, if you use Camunda Run, into the `/userlib/templates` folder)
+
+### Examples usages
+
+- Using a macro / template in a freemarker external file :
+
+![Alt text](docs/assets/external.png)
+
+With the following `test.ftl` content: 
+
+```
+<#import "simple_macro.ftl" as simple>
+
+<@simple.p>it works</@simple.p>
+```
+
+- Using a macro / template in a freemarker inline script:
+
+![Alt text](docs/assets/inline.png)
+
 ## More template engines (Community Extensions)
 
 You can find the following template engine extensions in Camundas [Community Hub](https://github.com/camunda-community-hub/camunda-7-template-engines-jsr223/):

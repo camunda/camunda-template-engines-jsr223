@@ -33,6 +33,7 @@ import javax.script.*;
  */
 public class FreeMarkerScriptEngine extends AbstractScriptEngine implements Compilable {
 
+  private final static String FREEMARKER_TEMPLATE_FOLDER = "/templates";
   protected ScriptEngineFactory scriptEngineFactory;
   protected Configuration configuration;
 
@@ -84,7 +85,9 @@ public class FreeMarkerScriptEngine extends AbstractScriptEngine implements Comp
     if (configuration == null) {
       synchronized (this) {
         if (configuration == null) {
-          configuration = new Configuration(Configuration.VERSION_2_3_29);
+          Configuration c = new Configuration(Configuration.VERSION_2_3_29);
+          c.setClassForTemplateLoading(this.getClass(), FREEMARKER_TEMPLATE_FOLDER);
+          configuration = c;
         }
       }
     }
