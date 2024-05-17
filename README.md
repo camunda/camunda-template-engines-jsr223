@@ -1,29 +1,11 @@
-﻿camunda-template-engines-freemarker
-===============================
+﻿# This project was moved
 
-<p>
-  <a href="https://docs.camunda.org/manual/latest/">Camunda 7 Docs</a> |
-  <a href="https://forum.camunda.io/c/camunda-platform-7-topics/39">Forum</a> |
-  <a href="LICENSE">License</a>
-</p>
+This repository was merged with the `camunda-bpm-platform` repository starting with 
+Camunda Platform Runtime 7.22.0-alpha2.
 
-Wrapper of Java Freemarker 2.3 template engine as
-[JSR 223](https://www.jcp.org/en/jsr/detail?id=223) compatible
-[script engine](http://docs.oracle.com/javase/7/docs/api/javax/script/ScriptEngine.html).
+Please find the new location of the source code here:\
+https://github.com/camunda/camunda-bpm-platform/tree/master/freemarker-template-engine
 
-You can use the template engine in Camunda Automation Platform 7 as scripting language.
+Please submit any future contributions to the `camunda-bpm-platform` repository.
 
-## More template engines (Community Extensions)
-
-You can find the following template engine extensions in Camundas [Community Hub](https://github.com/camunda-community-hub/camunda-7-template-engines-jsr223/):
-
-* Velocity 2.3
-* xQuery Saxon 9.6
-* XSLT Saxon 9.6
-
-## Contributing
-
-Have a look at our [contribution guide](https://github.com/camunda/camunda-bpm-platform/blob/master/CONTRIBUTING.md) for how to contribute to this repository.
-
-## License
-The source files in this repository are made available under the [Apache License Version 2.0](./LICENSE).
+Some maintenance branches might still be active in this repository.
